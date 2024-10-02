@@ -4,27 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>Sign Up Form</title>
 </head>
 <body>
   <div class="Image">
     <img src="/caspar-wai-j76rbepkeXw-unsplash.jpg">
-    <span class="banner">
+    <div class="banner">
       <h1>Kyoto Travel</h1>
-    </span>
+    </div>
+    <!-- <div class="credit">
     <h4>Photo by <a href="https://unsplash.com/@casparwai">Casper Wai</a> on <a href="https://unsplash.com/">Unsplash</a></h4>
-
+  </div> -->
   
   </div>
   <div class="signUp">
     <p>This is not a real online service! You know you need someting like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
     <p>You <em>know</em> you want to</p>
     <form action="#" method="get">
-      <label for="first_name">First Name:
-        <input type="text" name="first_name" id="first_name" class="firstName">
+      <label for="first_name">First Name
+        <input type="text" name="first_name" id="first_name" class="firstName" required>
       </label>
-      <label for="last_name">Last Name:
-        <input type="text" name="last_name" id="last_name" class="lastName">
+      <label for="last_name">Last Name
+        <input type="text" name="last_name" id="last_name" class="lastName" required>
+      </label>
+      <label for="email">Email
+        <input type="email" name="email" id="email" class="email" required>
+      </label>
+      <label for="phone">Phone
+        <input type="tel" name="phone" id="phone" class="phone" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" required>
+      </label>
+      <label for="password">Password
+        <input type="password" name="password" id="password" class="password" required>
+      </label>
+      <label for="password">Confirm Password
+        <input type="password" name="password" id="password" class="password" required>
       </label>
     </form>
   </div>
